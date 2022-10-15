@@ -32,15 +32,15 @@ for name in aliases gitconfig irbrc rspec zprofile zshrc; do
 done
 
 # Install zsh-syntax-highlighting plugin
-CURRENT_DIR=`pwd`
-ZSH_PLUGINS_DIR="$HOME/.oh-my-zsh/custom/plugins"
-mkdir -p "$ZSH_PLUGINS_DIR" && cd "$ZSH_PLUGINS_DIR"
-if [ ! -d "$ZSH_PLUGINS_DIR/zsh-syntax-highlighting" ]; then
-  echo "-----> Installing zsh plugin 'zsh-syntax-highlighting'..."
-  git clone https://github.com/zsh-users/zsh-autosuggestions
-  git clone https://github.com/zsh-users/zsh-syntax-highlighting
-fi
-cd "$CURRENT_DIR"
+# CURRENT_DIR=`pwd`
+# ZSH_PLUGINS_DIR="$HOME/.oh-my-zsh/custom/plugins"
+# mkdir -p "$ZSH_PLUGINS_DIR" && cd "$ZSH_PLUGINS_DIR"
+# if [ ! -d "$ZSH_PLUGINS_DIR/zsh-syntax-highlighting" ]; then
+#   echo "-----> Installing zsh plugin 'zsh-syntax-highlighting'..."
+#   git clone https://github.com/zsh-users/zsh-autosuggestions
+#   git clone https://github.com/zsh-users/zsh-syntax-highlighting
+# fi
+# cd "$CURRENT_DIR"
 
 # Symlink VS Code settings and keybindings to the present `settings.json` and `keybindings.json` files
 # If it's a macOS
